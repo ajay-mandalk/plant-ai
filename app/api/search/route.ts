@@ -2217,7 +2217,7 @@ print(f"Converted amount: {converted_amount}")
                 const response = await fetch(url, {
                   headers: {
                     'Accept': 'application/json',
-                    'x-cg-demo-api-key': serverEnv.COINGECKO_API_KEY,
+                    'x-cg-demo-api-key': serverEnv.COINGECKO_API_KEY || '',
                   },
                 });
 
@@ -2289,7 +2289,7 @@ print(f"Converted amount: {converted_amount}")
                 const response = await fetch(url, {
                   headers: {
                     'Accept': 'application/json',
-                    'x-cg-demo-api-key': serverEnv.COINGECKO_API_KEY,
+                    'x-cg-demo-api-key': serverEnv.COINGECKO_API_KEY || '',
                   },
                 });
 
@@ -2469,7 +2469,7 @@ print(f"Converted amount: {converted_amount}")
               query?: string;
             }) => {
               console.log('user', user);
-              const client = new MemoryClient({ apiKey: serverEnv.MEM0_API_KEY });
+              const client = new MemoryClient({ apiKey: serverEnv.MEM0_API_KEY || ''});
 
               console.log('action', action);
               console.log('content', content);
@@ -2642,13 +2642,13 @@ print(f"Converted amount: {converted_amount}")
                   fetch(`https://api.coingecko.com/api/v3/coins/${coinId}/ohlc?vs_currency=${vsCurrency}&days=${days}`, {
                     headers: {
                       'Accept': 'application/json',
-                      'x-cg-demo-api-key': serverEnv.COINGECKO_API_KEY,
+                      'x-cg-demo-api-key': serverEnv.COINGECKO_API_KEY || '',
                     },
                   }),
                   fetch(`https://api.coingecko.com/api/v3/coins/${coinId}?localization=false&tickers=true&market_data=true&community_data=true&developer_data=true&sparkline=false`, {
                     headers: {
                       'Accept': 'application/json',
-                      'x-cg-demo-api-key': serverEnv.COINGECKO_API_KEY,
+                      'x-cg-demo-api-key': serverEnv.COINGECKO_API_KEY || '',
                     },
                   })
                 ]);

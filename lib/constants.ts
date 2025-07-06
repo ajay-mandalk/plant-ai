@@ -1,0 +1,9 @@
+// Search limits for free users
+export const SEARCH_LIMITS = {
+  DAILY_SEARCH_LIMIT: 2, // Daily searches for free users
+  EXTREME_SEARCH_LIMIT: 5, // Monthly extreme searches for free users
+} as const;
+
+export const PRICING = {
+  PRO_MONTHLY: 10, // Pro plan monthly price in USD
+} as const;

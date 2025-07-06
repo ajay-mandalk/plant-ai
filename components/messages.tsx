@@ -508,7 +508,7 @@ const Messages: React.FC<MessagesProps> = ({
       {status === 'submitted' && (
         <div className="flex items-start min-h-[calc(100vh-18rem)]">
           <div className="w-full">
-            <agroflyLogoHeader />
+            <AgroflyLogoHeader />
             <div className="flex space-x-2 ml-8 mt-2">
               <div
                 className="w-2 h-2 rounded-full bg-neutral-400 dark:bg-neutral-600 animate-bounce"
@@ -530,7 +530,7 @@ const Messages: React.FC<MessagesProps> = ({
       {/* Reserve space for empty/streaming assistant message */}
       {status === 'streaming' && isWaitingForResponse && (
         <div className="min-h-[calc(100vh-18rem)] mt-2">
-          <agroflyLogoHeader />
+          <AgroflyLogoHeader />
         </div>
       )}
 

